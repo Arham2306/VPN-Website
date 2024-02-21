@@ -6,8 +6,13 @@
     font-family: "Rubik", sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container {
-    width: 1140px;
+    width: 90%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -57,6 +62,7 @@
 }
 
 .header-buttons .SignIn {
+    /* width: 150px; */
     background: none;
     border: none;
     font-size: 16px;
@@ -65,6 +71,38 @@
 }
 
 .header-buttons .SignUp {
+    width: 150px;
+    background: none;
+    border: 1px solid #F53855;
+    color: #F53855;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.mobile-header-buttons button {
+    margin: 0 10px;
+    padding: 15px 25px;
+}
+
+.mobile-header-buttons .SignIn {
+    width: 150px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mobile-header-buttons .SignUp {
     width: 150px;
     background: none;
     border: 1px solid #F53855;

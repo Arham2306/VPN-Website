@@ -7,28 +7,62 @@
     <title>LaslesVPN</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="container">
-        <nav id="navbar">
-            <div class="header-logo">
-                <img src="./assets/Vector.png" alt="logo.png">
-                <h1 class="nav-title">Lasles<span class="logo-bold">VPN</span></h1>
-            </div>
-            <div class="links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Help</a></li>
-            </div>
-            <div class="header-buttons">
-                <button class="SignIn">Sign In</button>
-                <button class="SignUp">Sign Up</button>
-            </div>
-        </nav>
+    <nav id="navbar">
+        <div class="header-logo">
+            <img src="./assets/Vector.png" alt="logo.png">
+            <h1 class="nav-title">Lasles<span class="logo-bold">VPN</span></h1>
+        </div>
+        <div class="links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Help</a></li>
+        </div>
+        <div class="hamburgerMenu">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="header-buttons">
+            <button class="SignIn">Sign In</button>
+            <button class="SignUp">Sign Up</button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <div class="mobile-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Help</a></li>
+        </div>
+        <div class="mobile-header-buttons">
+            <button class="SignIn">Sign In</button>
+            <button class="SignUp">Sign Up</button>
+        </div>
     </div>
+    <div class="container">
+    </div>
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerMenuIcon = document.querySelector('.bx-menu');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            hamburgerMenuIcon.addEventListener('click', function () {
+                mobileMenu.style.display = (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') ? 'flex' : 'none';
+            });
+        });
+    </script>
+
 </body>
 
 </html>
