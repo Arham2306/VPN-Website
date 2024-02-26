@@ -179,7 +179,7 @@ body {
     gap: 30px;
 }
 
-.bx {
+.s2-icons {
     font-size: 20px;
     color: #F53838;
     background-color: #FFECEC;
@@ -203,4 +203,26 @@ body {
     display: flex;
     justify-content: space-around;
     height: 200px;
+}
+
+/* Section 3 */
+
+
+.s3-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s3 li {
+    display: flex;
+}
+
+#s3 .bxs-check-circle {
+    font-size: 20px;
+    color: #2FAB73;
+}
+
+.s3-content {
+    margin: 15% 0;
 }
